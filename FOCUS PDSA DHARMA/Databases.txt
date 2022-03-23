@@ -1,0 +1,64 @@
+===Rawat Darurat===
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40101%')
+
+==Rawat Jalan===
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40102%')
+
+==Rawat Inap==
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40103%')
+
+===VOUCHER===
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40100%')
+
+==Cafe==
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%4010403%')
+
+===Lain-Lain===
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40199%')
+
+===Diskon Penjualan===
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%40105%')
+//DITAMBAH
+select SUM(TBJ_Transaksi_Detail.Debit) as debit , SUM(TBJ_Transaksi_Detail.Kredit) as kredit from TBJ_Transaksi_Detail
+inner join TBJ_Transaksi on TBJ_Transaksi.No_Bukti = TBJ_Transaksi_Detail.No_Bukti
+where 
+Transaksi_Date >= '2019-09-01'
+and Transaksi_Date <= '2019-09-17'
+and Akun_ID in (select Akun_ID from Mst_Akun where Group_ID = 4 and Aktif = 1 and Akun_No like '%403%')
+
+

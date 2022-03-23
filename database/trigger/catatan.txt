@@ -1,0 +1,13 @@
+setting php.ini
+max_execution_time = 3600  ;Hitungan Dalam Detik
+max_input_time=600         ;Hitungan Dalam Detik
+memory_limit = 512M        ;Hitungan Dalam Detik
+
+SCHEDULE CRONJOB
+1. Buat File Comman (Optional)
+2. Edit app\console\kernel.php @schedule
+3. tambahkan fungsi apapun yang anda inginkan. lihat documentasi laravel mengenai method yang disediakan
+4. BEKERJAR pada linux!
+	4.1. pada terminal ketik cronjob -e (untuk menambahkan syntak cronjob agar file menjalankan schedule pada kernel.php)
+	4.2 tambahan syntak * * * * * php /folderAplikasi/artisan schedule:run >> /dev/null 2>&1
+	4.3. * * * * * secara berurutan artinya Menit, Jam, Tanggal, Bulan, Hari
